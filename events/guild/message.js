@@ -42,7 +42,7 @@ module.exports = async (bot, message) => {
         var commandfile = bot.commands.get(cmd) || bot.commands.get(bot.aliases.get(cmd))
          if (commandfile){
              
-            console.log(commandfile) //console.log the usage of commands
+            
         
             commandfile.run(bot, message, args, ops)
         }
